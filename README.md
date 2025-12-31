@@ -34,3 +34,11 @@ rag-knowledge-assistant/
 ├── USAGE.md
 ├── ROADMAP.md
 └── requirements.txt
+```
+
+## Documentation
+
+- [Architecture](ARCHITECTURE.md)
+- [Advanced Usage](USAGE.md)
+- [Roadmap](ROADMAP.md)
+
