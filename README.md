@@ -1,19 +1,36 @@
 # RAG Knowledge Assistant
 
-A Retrieval-Augmented Generation (RAG) system that allows querying PDF documents using
-FAISS vector search and OpenAI GPT-5-mini.
+A Retrieval-Augmented Generation (RAG) system for querying PDF documents using FAISS vector search and OpenAI GPT-5-mini.
+
+This project demonstrates a complete, end-to-end RAG pipeline:
+PDF ingestion → chunking → vector indexing → retrieval → context-aware Q&A.
+
+---
 
 ## Features
-- PDF ingestion and chunking
-- Vector indexing with FAISS
+
+- PDF ingestion with automatic text chunking
+- OpenAI embeddings for semantic search
+- Fast similarity search using FAISS
 - Context-aware question answering
-- OpenAI GPT-5-mini integration
+- GPT-5-mini for low-cost, fast inference
+- Simple CLI-based interface
 
-## Setup
+---
 
-```bash
-git clone <your-repo-url>
-cd rag-knowledge-assistant
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+## Project Structure
+
+```text
+rag-knowledge-assistant/
+├── app/
+│   ├── ingest.py
+│   ├── rag.py
+│   ├── test_rag.py
+│   └── main.py
+├── data/sample_docs/
+├── vector_store/
+├── README.md
+├── ARCHITECTURE.md
+├── USAGE.md
+├── ROADMAP.md
+└── requirements.txt
